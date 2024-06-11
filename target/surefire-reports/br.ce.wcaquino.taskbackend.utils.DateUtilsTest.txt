@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: br.ce.wcaquino.taskbackend.utils.DateUtilsTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in br.ce.wcaquino.taskbackend.utils.DateUtilsTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in br.ce.wcaquino.taskbackend.utils.DateUtilsTest
+deveRetornarTrueParaDatasFuturas(br.ce.wcaquino.taskbackend.utils.DateUtilsTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at br.ce.wcaquino.taskbackend.utils.DateUtilsTest.deveRetornarTrueParaDatasFuturas(DateUtilsTest.java:12)
+
