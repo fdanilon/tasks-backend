@@ -49,5 +49,13 @@ pipeline {
                 }
             }
         }
+        stage ('Functional Test'){
+            steps {
+                dir('functional-test'){
+                    git credentialsId: 'github_login', url: 'https://github.com/fdanilon/tasks-functional-tests'
+                    bat 'mvn test'
+                }
+            }
+        }
     }
 }
