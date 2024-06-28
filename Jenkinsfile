@@ -34,7 +34,7 @@ pipeline {
         }
         stage ('API Test'){
             steps {
-                dir('api-test'){
+                dir('apirest'){
                     git credentialsId: 'github_login', url: 'https://github.com/fdanilon/tasks-apirest'
                     bat 'mvn test'
                 }
