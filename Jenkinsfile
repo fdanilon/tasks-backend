@@ -46,8 +46,8 @@ pipeline {
                     git branch: 'main', credentialsId: 'github_login', url: 'https://github.com/fdanilon/tasks-frontend'
                     bat 'mvn clean package'
                     deploy adapters: [tomcat8(credentialsId: 'TomcatLogin', path: '', url: 'http://localhost:8001/')], contextPath: 'tasks', war: 'target/tasks.war'
+                }
             }
         }
     }
 }
-
